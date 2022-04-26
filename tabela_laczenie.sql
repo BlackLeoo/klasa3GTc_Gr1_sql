@@ -37,3 +37,11 @@ INSERT INTO `klasa3Gtc`.`klasa3GTc_gr1_miejscowosc` VALUES
 (NULL, 4, 'Jasło', 'Rynek', '2020-02-22 16:20:21', 10, 70),
 (NULL, 3, 'Sobniów', NULL , '2020-02-22 16:20:21', 200, NULL ),
 (NULL, 2, 'Jasło', 'Kochanowskiego', '2020-02-22 16:20:21', 11, 7);
+
+SELECT `klasa3GTc_gr1_osoba`.`Imie`, `klasa3GTc_gr1_osoba`.`Nazwisko`, `klasa3GTc_gr1_miejscowosc`.`Miasto`
+FROM `klasa3Gtc`.`klasa3GTc_gr1_osoba`, `klasa3Gtc`.`klasa3GTc_gr1_miejscowosc` 
+WHERE `klasa3GTc_gr1_osoba`.`Id`=`klasa3GTc_gr1_miejscowosc`.`Id` AND `klasa3GTc_gr1_miejscowosc`.`Miasto`='Jasło'
+
+SELECT `klasa3GTc_gr1_osoba`.`Imie`, `klasa3GTc_gr1_osoba`.`Nazwisko`, `klasa3GTc_gr1_miejscowosc`.`nr_lokalu`
+FROM `klasa3Gtc`.`klasa3GTc_gr1_osoba`, `klasa3Gtc`.`klasa3GTc_gr1_miejscowosc` 
+WHERE `klasa3GTc_gr1_osoba`.`Id`=`klasa3GTc_gr1_miejscowosc`.`Id` AND `klasa3GTc_gr1_miejscowosc`.`nr_lokalu`=7
