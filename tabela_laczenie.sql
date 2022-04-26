@@ -31,3 +31,9 @@ CREATE TABLE `klasa3Gtc`.`klasa3GTc_gr1_miejscowosc` (
     PRIMARY KEY (`Id_miejscowosc`),
     FOREIGN KEY (`Id`) REFERENCES klasa3GTc_gr1_osoba(`Id`)
 )ENGINE = InnoDB CHARSET=utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+INSERT INTO `klasa3Gtc`.`klasa3GTc_gr1_miejscowosc` VALUES 
+(NULL, 1, 'Jasło', 'Bednarska', '2020-02-22 16:20:21', 1, 7),
+(NULL, 4, 'Jasło', 'Rynek', '2020-02-22 16:20:21', 10, 70),
+(NULL, 3, 'Sobniów', NULL , '2020-02-22 16:20:21', 200, NULL ),
+(NULL, 2, 'Jasło', 'Kochanowskiego', '2020-02-22 16:20:21', 11, 7);
